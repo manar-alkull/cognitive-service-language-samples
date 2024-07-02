@@ -105,6 +105,7 @@ class MainDialog extends ComponentDialog {
 
         default: {
             // Catch all for unhandled intents
+            console.warn(JSON.stringify(cluResult));
             const didntUnderstandMessageText = `Sorry, I didn't get that. Please try asking in a different way (intent was ${ this.cluRecognizer.topIntent(cluResult) })`;
             await stepContext.context.sendActivity(didntUnderstandMessageText, didntUnderstandMessageText, InputHints.IgnoringInput);
         }

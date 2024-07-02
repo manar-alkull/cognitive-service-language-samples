@@ -23,6 +23,7 @@
         "botbuilder-ai": "~4.15.0",
         "botbuilder-dialogs": "~4.15.0",
         "dotenv": "~8.2.0",
+        "memfs": "^4.9.3",
         "restify": "~8.5.1"
     },
     "devDependencies": {
